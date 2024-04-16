@@ -17,10 +17,13 @@ pipeline {
 
     stage('Package') {
       parallel {
-        stage('Package') {
+        when {
+          branch 'master'
+          stage('Package') {
           steps {
             echo 'Generating artifacts for deployment'
             sh 'mvn package -DskipTests'
+          }
           }
         }
 
