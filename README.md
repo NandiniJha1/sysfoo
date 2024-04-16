@@ -1,2 +1,2 @@
 This is a Sample Maven App. 
-Changes for polling
+Trying to push with branch rules
