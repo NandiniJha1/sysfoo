@@ -6,7 +6,7 @@ pipeline {
   stages{
       stage("build"){
           steps{
-              echo 'Compiling the code for sysfoo'
+              echo 'Compiling the code for sysfoo app'
               sh 'mvn compile'
           }
       }
