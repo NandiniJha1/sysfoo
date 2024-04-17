@@ -2,7 +2,6 @@ pipeline {
   agent {
     docker {
       image 'maven:3.6.3-jdk-11-slim'
-      args 'Updated docker as a agent'
     }
 
   }
@@ -49,7 +48,6 @@ pipeline {
     }
 
   }
-  
   post {
     always {
       echo 'This pipeline is completed..'
